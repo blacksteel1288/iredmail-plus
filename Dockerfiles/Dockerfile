@@ -8,6 +8,9 @@ FROM ubuntu:jammy
 MAINTAINER Zhang Huangbin <zhb@iredmail.org>
 EXPOSE 80 443 25 465 587 143 993 110 995 4190
 
+LABEL org.opencontainers.image.source=https://github.com/blacksteel1288/iredmail-plus
+LABEL org.opencontainers.image.description="iRedMail Dockerized - Plus"
+
 ARG ENTRYPOINTS_DIR=/docker/entrypoints
 ARG SCRIPTS_DIR=/docker/scripts
 ARG MARIADB_PRE_START_SCRIPTS_DIR=/docker/mariadb/pre_start
